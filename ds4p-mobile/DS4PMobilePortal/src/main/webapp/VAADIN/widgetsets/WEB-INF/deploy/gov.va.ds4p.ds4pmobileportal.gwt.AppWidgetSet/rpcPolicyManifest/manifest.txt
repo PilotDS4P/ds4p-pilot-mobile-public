@@ -1,0 +1,2 @@
+# Module gov.va.ds4p.ds4pmobileportal.gwt.AppWidgetSet
+# RPC service class, partial path of RPC policy file

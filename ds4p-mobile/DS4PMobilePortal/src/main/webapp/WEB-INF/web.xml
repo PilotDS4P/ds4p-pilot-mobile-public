@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+    <filter>
+        <filter-name>ContextFilter</filter-name>
+        <filter-class>gov.va.ds4p.ds4pmobileportal.filter.AdminContextFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ContextFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>           
+    <display-name>Vaadin Web Application</display-name>
+    <context-param>
+        <description>Vaadin production mode</description>
+        <param-name>productionMode</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Vaadin Application Servlet</servlet-name>
+        <servlet-class>com.vaadin.addon.touchkit.server.TouchKitApplicationServlet</servlet-class>
+        <init-param>
+            <description>Vaadin application class to start</description>
+            <param-name>application</param-name>
+            <param-value>gov.va.ds4p.ds4pmobileportal.MyVaadinApplication</param-value>
+        </init-param>
+                <init-param>
+            <description>Application widgetset</description>
+            <param-name>widgetset</param-name>
+            <param-value>gov.va.ds4p.ds4pmobileportal.gwt.AppWidgetSet</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Vaadin Application Servlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+	<!-- Configure these is you need "fallback" application or non supported 
+		browsers -->
+<!-- 	
+	<init-param>
+		<description>
+			Vaadin fallback application class to start</description>
+		<param-name>fallbackApplication</param-name>
+		<param-value>com.vornitologist.VornitologistFallbackApplication</param-value>
+	</init-param>
+	<init-param>
+		<description>
+			Application widgetset</description>
+		<param-name>fallbackWidgetset</param-name>
+		<param-value>com.vaadin.terminal.gwt.DefaultWidgetSet</param-value>
+	</init-param>
+-->  
+    
+</web-app>

@@ -1,0 +1,14 @@
+/* 
+    Document   : styles
+    Created on : Feb 17, 2013, 1:02:29 AM
+    Author     : Duane DeCouteau
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import "../base/styles.css";
+
+root { 
+    display: block;
+}
+
