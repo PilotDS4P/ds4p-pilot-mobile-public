@@ -1,3 +1,12 @@
+/*
+ * This software is being provided for technology demonstration purposes only.
+ * Use of Vaadin Touchkit Add-on API are provided via Affero General Public License
+ * (APGL 3.0).  Please refer the APGL 3.0 at www.gnu.org for further details.
+ *
+ * Items outside of the use of Vaadin Touchkit Add-on API are being provided per
+ * FARS 52.227-14 Rights in Data - General.  Any redistribution or request for
+ * copyright requires written consent by the Department of Veterans Affairs.
+ */
 function eT(){}
 function _S(){}
 function _Ob(){}

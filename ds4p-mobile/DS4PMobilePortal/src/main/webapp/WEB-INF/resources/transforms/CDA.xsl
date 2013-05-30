@@ -1,9 +1,13 @@
 <?xml version="1.0"?>
 <!--
 
-    This software is being provided per FARS 52.227-14 Rights in Data - General.
-    Any redistribution or request for copyright requires written consent by the
-    Department of Veterans Affairs.
+    This software is being provided for technology demonstration purposes only.
+    Use of Vaadin Touchkit Add-on API are provided via Affero General Public License
+    (APGL 3.0).  Please refer the APGL 3.0 at www.gnu.org for further details.
+
+    Items outside of the use of Vaadin Touchkit Add-on API are being provided per
+    FARS 52.227-14 Rights in Data - General.  Any redistribution or request for
+    copyright requires written consent by the Department of Veterans Affairs.
 
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"

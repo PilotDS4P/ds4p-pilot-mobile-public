@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
     This software is being provided for technology demonstration purposes only.
@@ -9,15 +10,19 @@
     copyright requires written consent by the Department of Veterans Affairs.
 
 -->
-<module>
-	<!--
-	    This file is automatically updated based on new dependencies by the
-	    goal "vaadin:update-widgetset".
-	-->
-
-	<!-- Inherit DefaultWidgetSet -->
-	<inherits name="com.vaadin.terminal.gwt.DefaultWidgetSet" /> 
-	
-	<inherits name="com.vaadin.addon.touchkit.gwt.TouchKitWidgetSet" />
-    
-</module>
+<actions>
+        <action>
+            <actionName>build</actionName>
+            <goals>
+                <goal>install</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-License File</actionName>
+            <displayName>License File</displayName>
+            <goals>
+                <goal>license:format</goal>
+            </goals>
+        </action>
+        
+    </actions>
